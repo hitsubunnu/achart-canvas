@@ -1,0 +1,81 @@
+<html lang="ja">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Canvas Demo一覧</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="hitsubunnu">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+		body {
+			font-family: 'MS Gothic','sans-serif';
+			padding-top: 60px;
+        	padding-bottom: 40px;
+		}
+		.add {
+			padding-top: 60px;
+			text-align: right;
+			float: right;
+		}
+    </style>
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
+</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+						<ul class="nav">
+							<li>
+								<div class="btn-group">
+									<a href="/chart/svg/index.html" class="btn">SVG/VML</a>
+									<button class="btn btn-primary">Canvas(スマホ版)</button>
+								</div>	
+							</li>
+							
+							<li><a href="#demo_fx_mobile_canvas"> Line </a></li>
+							<li><a href="#demo_stock_mobile_canvas"> Candlestick</a></li> 
+						</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+
+		
+			<div class="hero-unit">
+        		<h4>Canvas対応ブラウザ：</h4>
+        		<p>Internet Explorer 9.0+ , Firefox 3.0+, Safari 3.0+, Chrome 5.0+, Opera 9.5+ , iphone(ios 3.0+), ipad(ios 3.0+) , android(2.3+ 及び 2.3+opera , 2.3+Firefox)</p>        		
+				<h4>API使い方:</h4>
+				<pre>
+		window.onload = function () {
+			new ChartColumn({
+				id:'show_demo',
+				width:'980',
+				height:'400',
+				data:  ... 
+			}).draw();
+		};
+</pre>
+      		</div>
+			
+				
+			<div id="demo_fx_mobile_canvas">
+				<h3 class="add"><a href="demo_fx_mobile_canvas.html" target="_black">Open Page</a></h3>
+				<iframe src="demo_fx_mobile_canvas.html" width="1050" height="550"></iframe>
+			</div>
+			<br >	
+			<div id="demo_stock_mobile_canvas">
+				<h3 class="add"><a href="demo_stock_mobile_canvas.html" target="_black">Open Page</a></h3>
+				<iframe src="demo_stock_mobile_canvas.html" width="1050" height="580"></iframe>   	
+			</div>
+			<br >	
+		</div>
+	</body>
+</html>
+
